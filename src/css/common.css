@@ -1,0 +1,99 @@
+/* Space sections */
+.small-space-section {
+  height: 1rem;
+}
+
+.medium-space-section {
+  height: 3rem;
+}
+
+.large-space-section {
+  height: 5rem;
+}
+
+/* Misc */
+.edit-img {
+  max-width: 100%;
+  max-height: 50vh;
+  height: auto;
+}
+
+/* Element selectors */
+html {
+  font-weight: 200;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 200;
+}
+
+h5 {
+  font-weight: 100;
+  font-size: 1.8rem !important;
+  margin: 0px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+
+/* For FontAwesome icons */
+.circle-icon {
+  padding: 30px;
+  border-radius: 50%;
+}
+
+/* Mobile changes (reactive small) */
+@media screen and (max-width: 568px) {
+  h4 {
+    font-size: 1.12rem !important;
+  }
+  h5 {
+    font-size: 1.3rem !important;
+  }
+  p {
+    font-size: 0.7rem !important;
+  }
+  p.bigger {
+    font-size: 1.2rem !important;
+  }
+}
+
+/* Mobile changes (reactive landscape) */
+@media screen and (max-height: 500px) {
+  .hide-on-mobile-landscape {
+    display: none;
+  }
+}
+
+/* Mobile changes (reactive medium) */
+@media screen and (max-width: 992px) and (min-width: 568px) {
+  h4 {
+    font-size: 1.12rem !important;
+  }
+  h5 {
+    font-size: 1.4rem !important;
+  }
+  p {
+    font-size: 1.0rem !important;
+  }
+}
+
+/* Small brand-logo size fixes to make site more reactive */
+@media screen and (max-width: 1140px) and (min-width: 1050px) {
+  .brand-logo {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 1000px) {
+  .brand-logo {
+    font-size: 0.75rem !important;
+  }
+}
+/*# sourceMappingURL=common.css.map */

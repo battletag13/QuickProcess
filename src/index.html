@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'
+      'unsafe-inline';
+      script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src
+      'self' 'unsafe-inline'; script-src 'self'">
+    <title>Quick Process</title>
+
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/common.css">
+  </head>
+  <body>
+    <h1 class="center">Quick Process</h1>
+    <input type="file" accept="image/*" id="file-select" class="hide">
+
+    <div id="control-panel" class="row">
+      <a id="select-img" href="#" class="col s2 offset-s2 btn waves-effect
+        waves-light center">Select IMG</a>
+      <a id="save-edit" href="#" class="col s2 offset-s1 btn disabled
+        waves-effect waves-light center">Save Edit</a>
+      <a id="save-img" href="#" class="col s2 offset-s1 btn disabled
+        waves-effect waves-light center">Save IMG</a>
+    </div>
+
+    <div class="row">
+
+      <div class="col s12 m6 l3 offset-l2 center-align" style="height:
+        50vh">
+        <img src="placeholder.png" id="image-before"
+          class="edit-img">
+      </div>
+      <div class="col s12 m6 l3 offset-l2 center-align" style="height:
+        50vh;">
+        <img src="placeholder.png" id="image-after" class="edit-img">
+      </div>
+
+      <div id="filters" class="row">
+      </div>
+      <br />
+      <div class="row">
+        <div class="col s12 m5 offset-m1">
+          <h4 class="center">Brightness</h4>
+          <p class="range-field">
+            <input type="range" id="brightness" min="0"
+              max="200" />
+          </p>
+        </div>
+        <div class="col s12 m5">
+          <h4 class="center">Saturation</h4>
+          <p class="range-field">
+            <input type="range" id="saturation" min="0" max="200" />
+          </p>
+        </div>
+      </div>
+      <a id="warm-btn" href="#" class="col s12 m2 offset-m2 btn disabled
+        waves-effect waves-light center">Warm</a>
+      <a id="cool-btn" href="#" class="col s12 m2 offset-m1 btn disabled
+        waves-effect waves-light center">Cool</a>
+      <a id="grey-btn" href="#" class="col s12 m2 offset-m1 btn disabled
+        waves-effect waves-light center">Grey</a>
+      <br />
+      <br />
+      <br />
+      <a id="creama-btn" href="#" class="col s12 m2 offset-m2 btn disabled
+        waves-effect waves-light center">Creama</a>
+      <a id="lark-btn" href="#" class="col s12 m2 offset-m1 btn disabled
+        waves-effect waves-light center">Lark</a>
+      <a id="rise-btn" href="#" class="col s12 m2 offset-m1 btn disabled
+        waves-effect waves-light center">Rise</a>
+
+    </div>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/renderer.js"></script>
+  </body>
+</html>
